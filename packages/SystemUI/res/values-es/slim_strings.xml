@@ -164,4 +164,8 @@
     <string name="onthego_front_camera">Usar cámara frontal</string>
     <string name="onthego_service_toggle">Reiniciar servicio automáticamente</string>
 
+    <!-- Development shortcut -->
+    <string name="advanced_dev_option_wipe_app">Eliminar datos de aplicación</string>
+    <string name="advanced_dev_option_force_stop">Detener</string>
+
 </resources>
