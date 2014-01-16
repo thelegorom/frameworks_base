@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.internal.util.ose;
+package com.android.internal.util.lego;
 
 import android.content.Context;
 import android.content.res.Resources;
