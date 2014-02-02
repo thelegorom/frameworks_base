@@ -72,4 +72,7 @@
     <!-- stylus gestures support -->
     <string name="stylus_app_not_installed">%s no está instalado</string>
 
+    <!-- WiFi turn off notification -->
+    <string name="notify_turn_wifi_off_title">Desactivar Wi-Fi</string>
+
 </resources>
