@@ -169,6 +169,7 @@ public class NotificationManagerService extends INotificationManager.Stub
     private boolean mScreenOn = true;
     private boolean mWasScreenOn = true;
     private boolean mInCall = false;
+    private boolean mBatterySaverDisableLED = false;
     private boolean mNotificationPulseEnabled;
     private HashMap<String, NotificationLedValues> mNotificationPulseCustomLedValues;
     private Map<String, String> mPackageNameMappings;
@@ -1300,6 +1301,8 @@ public class NotificationManagerService extends INotificationManager.Stub
             resolver.registerContentObserver(Settings.System.getUriFor(
                     Settings.System.QUIET_HOURS_DIM),
                     false, this, UserHandle.USER_ALL);
+            resolver.registerContentObserver(Settings.Global.getUriFor(
+                    Settings.Global.BATTERY_SAVER_LED_DISABLE), false, this, UserHandle.USER_ALL);
 
             update(null);
         }
@@ -1343,6 +1346,9 @@ public class NotificationManagerService extends INotificationManager.Stub
             if (uri == null || ENABLED_NOTIFICATION_LISTENERS_URI.equals(uri)) {
                 rebindListenerServices();
             }
+
+            mBatterySaverDisableLED = Settings.Global.getInt(resolver,
+                    Settings.Global.BATTERY_SAVER_LED_DISABLE, 0) != 0;
         }
     }
 
@@ -2341,8 +2347,7 @@ public class NotificationManagerService extends INotificationManager.Stub
     }
 
     // lock on mNotificationList
-    private void updateLightsLocked()
-    {
+    private void updateLightsLocked() {
         // handle notification lights
         if (mLedNotification == null) {
             // get next notification, if any
@@ -2354,7 +2359,7 @@ public class NotificationManagerService extends INotificationManager.Stub
 
         // Don't flash while we are in a call, screen is
         // on or we are in quiet hours with light dimmed
-        if (mLedNotification == null || mInCall || mScreenOn
+        if (mBatterySaverDisableLED || mLedNotification == null || mInCall || mScreenOn
                 || (QuietHoursHelper.inQuietHours(mContext, Settings.System.QUIET_HOURS_DIM))) {
             mNotificationLight.turnOff();
         } else if (mNotificationPulseEnabled) {
