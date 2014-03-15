@@ -3871,6 +3871,19 @@ public final class Settings {
         public static final String ON_THE_GO_CAMERA = "on_the_go_camera";
 
         /**
+         * Whether the service should restart itself or not.
+         *
+         * @hide
+         */
+        public static final String ON_THE_GO_SERVICE_RESTART = "on_the_go_service_restart";
+
+         /**
+         * Disable profiles from powermenu even if still turned on
+         * @hide
+         */
+        public static final String SHOW_PROFILES = "show_profiles";
+
+        /**
          * Holds the text for the Carrier label. An empty string
          * will bring the default text back.
          * @hide
