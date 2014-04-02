@@ -44,7 +44,7 @@
     <string name="toggle">Interruptor</string>
 
     <!-- Slim Shortcut Actions -->
-    <string name="shortcut_picker">Accesos Directos Slim</string>
+    <string name="shortcut_picker">Accesos Directos</string>
     <string name="shortcut_immersive">Int. Modo Immersivo</string>
     <string name="shortcut_quiethours">Int. Horas de tranquilidad</string>
     <string name="shortcut_rotation">Int. Bloqueo Rotación</string>
