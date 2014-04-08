@@ -112,11 +112,11 @@ public class Build {
         public static final String CODENAME = getString("ro.build.version.codename");
 
         /**
-         * The current version string that defines the slim version
+         * The current version string that defines the lego version
          * the device is on
          * @hide
          */
-        public static final String SLIM = getString("ro.slim.version");
+        public static final String LEGO = getString("ro.lego.version");
 
         /**
          * The SDK version to use when accessing resources.
