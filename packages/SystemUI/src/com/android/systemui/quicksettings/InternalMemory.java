@@ -47,9 +47,6 @@ public class InternalMemory extends QuickSettingsTile {
             @Override
             public void onClick(View v) {
 		updateTile();
-                if (isFlipTilesEnabled()) {
-                    flipTile(0);
-                }
             }
         };
     }
