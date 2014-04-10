@@ -69,7 +69,6 @@
     <string name="chamber_name_message">Nombre del acceso directo que se mostrará junto al icono.</string>
     <string name="chamber_name_toast">Se usará el nombre predeterminado</string>
 
-
     <!-- Quick Settings -->
     <string name="quick_settings_gps">GPS</string>
     <string name="quick_settings_gps_off">GPS apagado</string>
@@ -152,5 +151,17 @@
     <!-- Navigation bar IME navigation -->
     <string name="accessibility_ime_navigation_left">Cursor izquierda</string>
     <string name="accessibility_ime_navigation_right">Cursor derecha</string>
+
+    <!-- On The Go -->
+    <string name="onthego_notif_ticker">On-The-Go activado</string>
+    <string name="onthego_notif_title">On-The-Go está activo</string>
+    <string name="onthego_notif_stop">Parar</string>
+    <string name="onthego_notif_options">Opciones</string>
+    <string name="onthego_notif_error">No se puede iniciar On-The-Go</string>
+    <string name="onthego_notif_restart">Reiniciar On-The-Go</string>
+    <string name="onthego_notif_camera_changed">Modo de cámara cambiado</string>
+    <string name="onthego_transparency">Transparencia</string>
+    <string name="onthego_front_camera">Usar cámara frontal</string>
+    <string name="onthego_service_toggle">Reiniciar servicio automáticamente</string>
 
 </resources>
