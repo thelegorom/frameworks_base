@@ -493,7 +493,7 @@ public abstract class BaseStatusBar extends SystemUI implements
                         mNotificationBlamePopup.getMenu());
                 final ContentResolver cr = mContext.getContentResolver();
                 if (Settings.Secure.getInt(cr,
-                        Settings.Secure.DEVELOPMENT_SHORTCUT, 0) == 0) {
+                        Settings.Secure.DEVELOPMENT_SHORTCUT, 1) == 0) {
                     mNotificationBlamePopup.getMenu()
                             .findItem(R.id.notification_inspect_item_force_stop).setVisible(false);
                     mNotificationBlamePopup.getMenu()
