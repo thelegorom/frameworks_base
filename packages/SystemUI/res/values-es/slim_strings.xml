@@ -135,6 +135,10 @@
     <string name="quick_settings_reminder_noti_later">Actualizar hora</string>
     <string name="quick_settings_reminder_help_message">Tocar aquí para crear un recordatorio. Pulsación larga para eliminarlo.</string>
 
+    <!-- Navigation bar IME navigation -->
+    <string name="accessibility_ime_navigation_left">Cursor izquierdo</string>
+    <string name="accessibility_ime_navigation_right">Cursor derecho</string>
+
     <!-- Battery status in pie controls -->
     <string name="pie_battery_status_charging">Cargando (<xliff:g id="percent">%d</xliff:g>%%)</string>
     <string name="pie_battery_status_full">Cargado</string>
@@ -170,5 +174,17 @@
 
     <!-- Hide notification icons -->
     <string name="status_bar_notification_hide_icon_packages">Esconder ícono de aplicación</string>
+
+    <!-- Content description of the halo button in the notification panel for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <string name="accessibility_halo">Crear notificación halo.</string>
+
+    <!-- HALO -->
+    <string name="halo_dismiss">Borrar notificación</string>
+    <string name="halo_hide">Esconder</string>
+    <string name="halo_clear_all">Borrar todas las notificaciones</string>
+    <string name="halo_silence">Esconder &amp; silenciar hasta despertar</string>
+    <string name="halo_tutorial1">Esto es HALO</string>
+    <string name="halo_tutorial2">Muéveme: doble toque &amp; arrastra</string>
+    <string name="halo_tutorial3">Buscar tareas: arrastrado horizontal</string>
 
 </resources>
