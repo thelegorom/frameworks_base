@@ -95,4 +95,10 @@
     <!-- label for item that takes On-The-Go in the phone options dialog -->
     <string name="global_action_onthego">Modo On-The-Go</string>
 
+    <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permlab_recordScreen">Grabar contenido mostrado</string>
+    <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permdesc_recordScreen">Permite a la aplicación
+        grabar la pantalla del usuario.</string>
+
 </resources>
