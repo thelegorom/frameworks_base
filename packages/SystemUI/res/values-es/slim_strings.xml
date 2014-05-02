@@ -187,4 +187,7 @@
     <string name="halo_tutorial2">Muéveme: doble toque &amp; arrastra</string>
     <string name="halo_tutorial3">Buscar tareas: arrastrado horizontal</string>
 
+    <!-- Title shown in notification popup for launching notification in floating mode -->
+    <string name="status_bar_notification_floating_item_title">Modo flotante</string>
+
 </resources>
