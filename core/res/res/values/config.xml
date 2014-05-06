@@ -1381,5 +1381,10 @@
     <!-- Indicates that the device has Single-stage Camera key
          (without "Focus" state) instead of Dual-stage. -->
     <bool name="config_singleStageCameraKey">false</bool>
+    
+    <!-- DUMMY CONFIGS -->
+    <bool name="config_enableTorch">false</bool>
+    <string name="config_perf_profile_prop">sys.perf.profile</string>
+    <string name="config_perf_profile_default_entry">1</string>
 
 </resources>
