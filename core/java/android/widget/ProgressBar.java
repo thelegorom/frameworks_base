@@ -387,8 +387,9 @@ public class ProgressBar extends View {
         if (getImportantForAccessibility() == View.IMPORTANT_FOR_ACCESSIBILITY_AUTO) {
             setImportantForAccessibility(View.IMPORTANT_FOR_ACCESSIBILITY_YES);
         }
-
-	/**
+    }
+    
+    	/**
 	 * Converts a drawable to a tiled version of itself. It will recursively
 	 * traverse layer and state list drawables.
 	 */
